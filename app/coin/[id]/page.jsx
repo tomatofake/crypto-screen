@@ -3,13 +3,6 @@ import BackButton from "@/components/BackButton/BackButton";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export async function generateStaticParams() {
-  const coins = await fetchCoins(); 
-  return coins.map((coin) => ({
-    id: coin.id, 
-  }));
-}
-
 const CoinPage = ({ params }) => {
   const { id } = params; 
   const [data, setData] = useState(null); 
