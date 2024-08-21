@@ -32,7 +32,7 @@ const CoinPage = ({ params }) => {
 
   return (
     <>
-      <main className="2xl:py-20 2xl:mt-auto 2xl:mb-auto lg:mt-[15%] lg:mb-[15%] sm:mt-[20%] sm:mb-[20%] xs:mt-[30%] xs:mb-[30%] h-screen flex justify-center">
+      <main className="2xl:pb-20 2xl:pt-30 2xl:mt-auto 2xl:mb-auto lg:mt-[15%] lg:mb-[15%] sm:mt-[20%] sm:mb-[20%] xs:mt-[30%] xs:mb-[30%] h-screen flex justify-center">
         <section className="2xl:max-w-[960px] 2xl:px-0 xs:px-10 xs:w-full box-border">
           <div className="mb-4 text-lg">
             <BackButton />

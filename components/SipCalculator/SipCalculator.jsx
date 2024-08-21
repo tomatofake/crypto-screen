@@ -54,7 +54,7 @@ const SipCalculator = () => {
         />
       </div>
       <div>
-        <p className="mb-3"><span className="sm:block xs:hidden">Step up - </span>Yearly Increase in <span className="sm:inline xs:hidden">Monthly</span> Investment (%)</p>
+        <p className="mb-3"><span className="sm:inline xs:hidden">Step up - </span>Yearly Increase in <span className="sm:inline xs:hidden">Monthly</span> Investment (%)</p>
         <input
           type="number"
           value={increase}
