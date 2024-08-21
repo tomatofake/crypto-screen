@@ -15,7 +15,7 @@ const About = () => {
             At the core of CryptoScreen is our advanced tracking system, which delivers up-to-the-minute information on cryptocurrency prices and market capitalizations. This feature allows users to keep a pulse on market movements, helping them identify emerging trends and respond swiftly to price fluctuations. Whether you're tracking the performance of Bitcoin, Ethereum, or any other altcoin, CryptoScreen ensures you have the most accurate and current data at your fingertips.
             </p>
           </div>
-          <div className="xs:hidden calc:block box-border h-[]">
+          <div className="xs:hidden calc:block box-border">
             <Image className="object-contain" alt="about-img" src={about} />
           </div>
         </section>
