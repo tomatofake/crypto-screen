@@ -1,6 +1,4 @@
 'use client';
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 import PercentageCalculator from "@/components/PercentageCalculator/PercentageCalculator";
 import SipCalculator from "@/components/SipCalculator/SipCalculator";
 import StockCalculator from "@/components/StockCalculator/StockCalculator";
@@ -16,7 +14,6 @@ const Calculator = () => {
 
   return (
     <>
-      <Header />
       <main className="h-screen flex items-center px-10 sm:mt-auto sm:mb-auto">
         <section className="flex calc:flex-row xs:flex-col calc:justify-between w-full xs:items-start items-center">
           <div className="mb-10">
@@ -64,7 +61,6 @@ const Calculator = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

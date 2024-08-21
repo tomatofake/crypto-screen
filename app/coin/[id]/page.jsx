@@ -1,10 +1,14 @@
-'use client'
+'use client';
 import BackButton from "@/components/BackButton/BackButton";
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+export async function generateStaticParams() {
+  const coins = await fetchCoins(); 
+  return coins.map((coin) => ({
+    id: coin.id, 
+  }));
+}
 
 const CoinPage = ({ params }) => {
   const { id } = params; 
@@ -35,7 +39,6 @@ const CoinPage = ({ params }) => {
 
   return (
     <>
-    <Header />
       <main className="2xl:py-20 lg:mt-[15%] lg:mb-[15%] sm:mt-[20%] sm:mb-[20%] xs:mt-[30%] xs:mb-[30%] h-screen">
         <section className="2xl:max-w-[960px] 2xl:px-0 xs:px-10 xs:w-full box-border">
           <div className="mb-4 text-lg">
@@ -60,7 +63,6 @@ const CoinPage = ({ params }) => {
           </div>
         </section>
       </main>
-    <Footer />
     </>
     
   );

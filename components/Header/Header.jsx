@@ -22,7 +22,7 @@ const Header = () => {
     <header className='fixed top-0  w-full z-10 '>
       <div className='flex justify-between items-center px-10 py-5'>
         <div className='flex items-center'>
-          <Link href='/' className='text-2xl'>
+          <Link href='/' className='text-2xl text-white'>
             CryptoScreen
           </Link>
         </div>

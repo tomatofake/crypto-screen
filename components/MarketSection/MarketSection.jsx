@@ -18,7 +18,7 @@ const MarketSection = () => {
             </div>
           </div>
           <div className="sm:block xs:hidden">
-            <Image src={topology} />
+            <Image src={topology} alt="topology-img" />
           </div>
         </div>
       </div>
