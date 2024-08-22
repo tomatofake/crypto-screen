@@ -48,16 +48,9 @@ const Calculator = () => {
             </div>
           </div>
           <div>
-            {active === 'stockAverage' ? (
-              <StockCalculator />
-            ) : null}
-            {active === 'percentage' ? (
-              <PercentageCalculator />
-            ) : null}
-            {active === 'sip' ? (
-              <SipCalculator />
-              ) : null}
-            
+            {active === 'stockAverage' && <StockCalculator />}
+            {active === 'percentage' && <PercentageCalculator />}
+            {active === 'sip' && <SipCalculator />}
           </div>
         </section>
       </main>

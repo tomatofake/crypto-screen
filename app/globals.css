@@ -37,7 +37,6 @@ body {
   width: 20px;
 }
 
-
 ::-webkit-scrollbar-thumb {
   background: #8070d4;
   border: 6px solid rgba(0, 0, 0, 0.2);
@@ -66,16 +65,27 @@ input {
   outline: none;
   
 }
+
+textarea {
+  outline: none;
+  padding: 5px 10px;
+}
+
+textarea:focus {
+  border: 2px solid #4800f0;
+}
 @media (max-width: 910px) {
   input {
     width: 200px;
   }
 }
+
 @media (max-width: 768px) {
   input {
     width: 150px;
   }
 }
+
 input:focus {
   border: 2px solid #4800f0;
 }
